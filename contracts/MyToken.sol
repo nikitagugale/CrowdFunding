@@ -4,9 +4,9 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract MyToken is ERC20{
-    
 
+contract MyToken is ERC20 
+{
 constructor(
   //  owner = msg.sender
 ) ERC20("Snapper Coins","SNC"){
@@ -20,5 +20,5 @@ constructor(
     function decimals() public view virtual override returns(uint8){
         return 0;
     }
-    
+   
 }
